@@ -25,6 +25,8 @@ tr {
 
 table {
     width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .header {
@@ -74,11 +76,53 @@ table {
     padding-bottom: 12px;
 }
 
-table {
-    margin-left: auto;
-    margin-right: auto;
-}
 
 .footer-text {
     font-size: 11px;
 }
+
+/*
+What is important to know when linking an external file (like a stylesheet) to an HTML file?
+
+    The link should be in the head. The link is a resource you are adding to the page and therefore
+    should be somwehere where resources are imported to, the head being the best place. The head element 
+    doesn't contain anything that will be viewd on the page besides the title. It is usually the palces where
+    certain settings are set resoruces are added. The link is put in the <link> tag and the 
+    important this is to set the href="" to wherever the the source of the file is by specifying the
+    directory of the file, whether on the internet or locally. In HTML 5, the  rel="" nor type="" 
+    are necessary, rel="" was necessary in the old days of HTML 4, type is just used for extra safety.
+
+What tricks did you use to help you with positioning? How hard was it to get the site as you wanted it?
+    
+    It wasn't very difficult, it was definelty time consuming though. We always knew the types of attributes we
+    needed to use as a pair, occasionally having to look up how to configure one to get the affect we disired. We 
+    used the text-align to center all the text on the page, and margin options to centerize the table we had because
+    it is not a text element. The margin was difnetly a helpful attribute that we used a lot to get spacing between 
+    elements correctly done. The <span> tag with a class was really helpful for isolating certain parts of text we
+    wanted to alter.
+
+What CSS did you use to modify the element style (like size, color, etc.)
+    
+    We use the font-family to change the font to a custom one that we like, we chose a font from google. To change color
+    just used "color:" and set the color to whatever we want. The "font-size:" was used to set the size of fonts, this we
+    used with the "%" option to get the title to look like the Berkshire page. We used the "width:" property to set the table
+    to a managable width so it looked right. The "background-color:" was used to make the background white.
+
+Did you modify the HTML to include classes or ids? If so, which did you choose and why? If you didn't, how would you know which one to add to your HTML?
+    
+    We definetly used the class option a lot to isolate certain parts of the CSS. The class option is ually used to modify 
+    elements so that all the elements under the same class will have the same style. The is useful when you want certain things
+    to look consistent throughout your page. The id option used for unique elements that only appear once and attributes cannot be
+    shared across multiple elements. We mostly used the class attribute as it seems like best practice. All the CSS we looked at
+    mostly seem to be adding attributes via a class, the may mostly likely be because classes are more flexible in case a 
+    designer wants to reuse it.
+
+When you compared your site to the actual code base, which do you think had cleaner code that followed best practices and why?
+    
+    The pages were dont mostly differently. However, common attributes such as class, span, border and spacing elements such as
+    margin were frequently used in both. The actual page used the 'inherit' a lot which I have not really see too often, so I'm not
+    sure wethere it's practice. It seems as though the inherit option is a little confusing, while having individual attributes
+    for all parts are more typing but more clear in intentions. The original page also did not use a lot of id's or classes, this 
+    seems like bad practice when working in a team because your team-mate will have to think about where the element styles are 
+    coming from rather than just associating them with certain classes and id's.
+*/
