@@ -1,12 +1,12 @@
-![Part 1](/imgs/1.png)
-![Part 2](/imgs/2.png)
-![Part 3](/imgs/3.png)
-![Part 4](/imgs/4.png)
-![Part 5](/imgs/5.png)
-![Part 6](/imgs/6.png)
-![Part 7](/imgs/7.png)
-![Part 8](/imgs/8.png)
-![Part 9](/imgs/9.png)
+![Part 1](imgs/1.png)
+![Part 2](imgs/2.png)
+![Part 3](imgs/3.png)
+![Part 4](imgs/4.png)
+![Part 5](imgs/5.png)
+![Part 6](imgs/6.png)
+![Part 7](imgs/7.png)
+![Part 8](imgs/8.png)
+![Part 9](imgs/9.png)
 
 ####How can you use Chrome's DevTools inspector to help you format or position elements?
 	
