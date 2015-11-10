@@ -3,12 +3,12 @@
 # I worked on this challenge [by myself, with: Mira].
 
 def welcome(address)
-	address_array = address.split(" ")
-	if address.include?("CA")
-		return "Welcome to California"
-	else
-		return "You should move to California"
-	end
+  address_array = address.split(" ")
+  if address_array.include?("CA")
+    return "Welcome to California"
+  else
+    return "You should move to California"
+  end
 end
 
 
