@@ -25,7 +25,7 @@
 	people would be full off the 5 eggs? It would only fill 2 people because the one extra egg would not be enough to 
 	fill up the last person. Float division is more straight forward, as it will  give you a specfic decimal answer. 
 	This make float really useful for scientific problems where you need a precise answer to the decimal. So if you did 
-	'5/2.to_f', turning one of the asnwers to a float, you'd get 2.5 as the answer. That is the difference between a 
+	'5/2.to_f', turning one of the arguments to a float, you'd get 2.5 as the answer. That is the difference between a 
 	float and a integer, decimals vs whole numbers.
 
 #####Hours in a year:
