@@ -4,15 +4,12 @@
 # Your Solution Below
 
 def valid_triangle?(a, b, c)
-  # Your code goes here!
-  if a + b > c && b + c > a && a + c > b
-  	return true
+  if a + b > c and b + c > a and a + c > b
+    return true
   else
-  	false
+    false
   end
 end
-
-puts valid_triangle?(5,6,0) 
 
 
 # Write a method valid_triangle? which takes as its input three non-negative numbers. It should return true if the three numbers could form the side lengths of a triangle and false otherwise.
