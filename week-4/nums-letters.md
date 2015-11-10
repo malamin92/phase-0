@@ -23,3 +23,14 @@
 	give you a specfic decimal answer. This make float really useful for scientific problems where you need a precise answer to the
 	decimal. So if you did '5/2.to_f', turning one of the asnwers to a float, you'd get 2.5 as the answer. That is the difference
 	between a float and a integer, decimals vs whole numbers.
+
+#####Hours in a year:
+
+```ruby
+	puts 365 * 24
+```
+
+#####Minutes in a decade:
+```ruby
+	puts 60*24*365*10
+````
