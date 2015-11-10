@@ -86,3 +86,9 @@
 
 	Yeah, it was fairly simple. I barely had to make any changes to the instructed code in order to
 	get the rspec tests to pass, wish it was a bit more challanging. 
+
+#####The 3 challanges:
+
+[https://github.com/malamin92/phase-0/blob/master/week-4/defining-variables.rb](Defining Variables)
+[https://github.com/malamin92/phase-0/blob/master/week-4/basic_math.rb](Basic Math)
+[https://github.com/malamin92/phase-0/blob/master/week-4/simple_string.rb](Simple String)
