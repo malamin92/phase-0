@@ -1,6 +1,6 @@
 # Factorial
 
-# I worked on this challenge [by myself, with: ].
+# I worked on this challenge [by myself, with: Paul Dynowski ].
 
 
 # Your Solution Below
@@ -15,5 +15,4 @@ def factorial(number)
     i -= 1
   end
   return product
-    
 end
