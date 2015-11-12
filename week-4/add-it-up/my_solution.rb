@@ -48,16 +48,23 @@ end
 
 
 # 5. sentence_maker initial solution
-def sentence_maker(array)
-  sentence = ""
-  array.each do |word|
-    sentence += word.to_s + " "
-  end
-  sentence[-1] = "."
-  sentence.capitalize!
-end
+# def sentence_maker(array)
+#   sentence = ""
+#   array.each do |word|
+#     sentence += word.to_s + " "
+#   end
+#   sentence[-1] = "."
+#   sentence.capitalize!
+# end
 
 
 # 6. sentence_maker refactored solution
+
+def sentence_maker(array)
+  sentence = array.join(" ")
+  sentence.capitalize!
+  sentence += "."  
+end
+
 
 
