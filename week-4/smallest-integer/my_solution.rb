@@ -13,11 +13,16 @@
 # Your Solution Below
 def smallest_integer(list_of_nums)
   # Your code goes here!
-  if !list_of_nums.empty?
-  	return list_of_nums.min
-  else
-  	return nil
+  return nil if list_of_nums.empty?
+
+  smallest = list_of_nums[0]
+  i = 1
+  while(i < list_of_nums.size)
+  	smallest = list_of_nums[i] if list_of_nums[i] < smallest
+  	i += 1
   end
+
+  return smallest
 end
 
 # In the my_solution.rb file:
