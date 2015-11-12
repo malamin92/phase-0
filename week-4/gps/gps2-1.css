@@ -1,0 +1,42 @@
+
+
+body {
+    width: 960px;
+    margin: 0 auto;
+    font-family: "Times New Roman", Times, serif;
+    background-color: #A9FF88;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: #9F9EA5;
+    text-decoration: none;
+}
+
+header{
+    text-align: center;
+    border-bottom: 3px solid black; 
+}
+
+.column-1 {
+    width: 460px;
+    float: left;
+    
+}
+
+.column-2 {
+    width: 460px;
+    float: right;
+}
+
+footer {
+    clear: both;
+    text-align: center;
+    border-top: 3px solid black;
+    padding-top: 10px;
+}
+
+
