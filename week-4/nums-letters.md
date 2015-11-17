@@ -89,6 +89,6 @@
 
 #####The 3 challanges:
 
-[https://github.com/malamin92/phase-0/blob/master/week-4/defining-variables.rb](Defining Variables)
-[https://github.com/malamin92/phase-0/blob/master/week-4/basic_math.rb](Basic Math)
-[https://github.com/malamin92/phase-0/blob/master/week-4/simple_string.rb](Simple String)
+[Defining Variables](https://github.com/malamin92/phase-0/blob/master/week-4/defining-variables.rb)
+[Basic Math](https://github.com/malamin92/phase-0/blob/master/week-4/basic_math.rb)
+[Simple String](https://github.com/malamin92/phase-0/blob/master/week-4/simple_string.rb)
