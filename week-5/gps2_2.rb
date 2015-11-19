@@ -113,15 +113,19 @@ end
 
 ## DRIVER CODE
 
-p katys_list = create_list("banana")
+katys_list = create_list("banana pen koolaid")
 
-p add_item(katys_list, "apple")
+add_item(katys_list, "apple")
 
 print_list(katys_list)
 
-p remove_item(katys_list, "apple")
+remove_item(katys_list, "apple")
 
-p update_item(katys_list, "banana", 16)
+update_item(katys_list, "banana", 16)
+
+"\n"
+
+print_list(katys_list)
 # 
 
 =begin
