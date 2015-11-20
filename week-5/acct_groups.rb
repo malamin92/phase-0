@@ -9,6 +9,12 @@ Pseudocode:
 		4. Make keys for all the group names
 		5. Push members of the array into the hash as long as the hash has less than five members.
 		6. Return the hash as the answer.
+
+	MVP: As a minimum, I expect my program to return hash full of groups as keys and members as value arrays.
+			I am not worrying about having different groups every time or any other extra fullfillment, I just
+			need a minimum product to run and return a hash.
+
+	Data structure: Read response for: "What data structure did you decide to store the accountability groups in and why?"
 =end
 
 #Initial soultion:
