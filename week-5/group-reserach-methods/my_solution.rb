@@ -22,35 +22,102 @@ end
   the method is called on. 
 =end
 
-# # Person 2
-# def my_array_modification_method!(source, thing_to_modify)
-#   source.dup # This line is here to make sure all tests initially fail. Delete it when you begin coding.
-# end
+# Person 2
+=begin
+Pseudocode for my_array_modification_method!
+INPUT: Obtain an container object that contains a collection of words and integers, and the amount you want to modify the number in the container object by.
+FOR each element in the aray
+    Ask if the element is a integer
+    IF integer Then
+        Add thing_to_modify to the integer
+        Add the sum of that calculation to the array
+    END IF
+END FOR
+  return container object with modifications
+OUTPUT: Return the original container object with the integers inside modified by a certain amount
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Pseudocode for my_hash_modification_method!
+INPUT: Obtain a container object with a collection of words and numbers, and the amount you want to modify the number in the container object by
+  FOR each value in the the hash
+      Update the value by thing_to_modify
+      return each key/value pair
+  END FOR
+OUTPUT: Return the original container object with the integer values modified by a certain amount
+=end
 
-# def my_hash_modification_method!(source, thing_to_modify)
-#   source.dup # This line is here to make sure all tests initially fail. Delete it when you begin coding.
-# end
 
-# # Identify and describe the Ruby method(s) you implemented.
-# #
-# #
-# #
+def my_array_modification_method!(source, thing_to_modify)
+    source.map! do |s|
+        if s.is_a? String
+             s
+        else
+            s += thing_to_modify
+        end
+    end
+end
+
+def my_hash_modification_method!(source, thing_to_modify)
+  source.each { |key, value | source[key] = (value += thing_to_modify) }
+end
+
+=begin
+Identify and describe the Ruby method(s) you implemented.
+.map! takes each element of an array, passess it to a block, and builds a new array with the returned values.
+I would used this method if you want to iterate through a container object, and return the calculated values from the code block.
+.is_a takes a class as an argument.
+Returns a boolean value of true if the receiver object is an instance of that class.Returns false if it's not.
+I would use this method if you want to filter values based on whether or not an
+object belongs to a certain class.
+.each loops through each item in a array one by one, and yields that value to the
+code block.
+I would used this method if you want to iterate through a container object, but return the original array.
+I didn't find any new tricks to reading the documentation, but the blog post by Maria was great.
+It helped me sort through the documentation more easily.
+I will say that opening irb and typing in the example does with understanding what the method does.
+=end
 
 
-# # Person 3
-# def my_array_sorting_method(source)
-#   source # This line is here to make sure all tests initially fail. Delete it when you begin coding.
-# end
+# Person 3 - Jack Abernethy
+def my_array_sorting_method(source)
+  result = source.sort
+end
 
-# def my_hash_sorting_method(source)
-#    source # This line is here to make sure all tests initially fail. Delete it when you begin coding.
-# end
+def my_hash_sorting_method(source)
+  result = source.sort_by { |a| [a[1], a[0]] }
+end
 
-# # Identify and describe the Ruby method(s) you implemented.
-# #
-# #
-# #
+arr = ["abd",'zxe','cdeee','abc']
+hash = {
+  "cat" => 9,
+  "bronco" => 9,
+  "tiger" => 5
+}
+puts my_array_sorting_method(arr)
+puts my_hash_sorting_method(hash)
 
+# Identify and describe the Ruby method(s) you implemented.
+# The array sorting method comes down to the .sort method.
+# Sorting methods comes in the enumarable module which works
+# for many types of objects. Running the enumerable sort requires the <=>
+# function of the class that calls it, in this case array or hash. 
+# The <=> operator compares two instances of an object and returns 1, 0 or -1 (<.>, =).
+# 
+# The sort method uses this method to implement a sorting
+# algorithm, although you can override this by passing the
+# function a block as I did in hash version of my function.
+# 
+# Thus to better understand how both work, it's best to 
+# understand how their <=> operators work. The String <=>
+# works by comparing two strings by alphabetical order. This
+# starts with the first digit and will keep comparing until
+# two values disagree. If the strings are of different lengths,
+# but otherwise equal, it returns that the longer is greater.
+# 
+# The hash function doesn't have a <=> specified that I could find.
+# Functionally the sort method sorts by key and not value. This happens
+# because the sort function first turns the hash into an array of 
+# 2 cell arrays ([key, value]). Thus when I specify a[1] in my method,
+# a is each one of these arrays and thus a[1] would specify the value element.
 
 # # Person 4
 # def my_array_deletion_method!(source, thing_to_delete)
