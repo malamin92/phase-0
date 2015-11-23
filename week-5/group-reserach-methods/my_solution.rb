@@ -86,14 +86,7 @@ def my_hash_sorting_method(source)
   result = source.sort_by { |a| [a[1], a[0]] }
 end
 
-arr = ["abd",'zxe','cdeee','abc']
-hash = {
-  "cat" => 9,
-  "bronco" => 9,
-  "tiger" => 5
-}
-puts my_array_sorting_method(arr)
-puts my_hash_sorting_method(hash)
+
 
 # Identify and describe the Ruby method(s) you implemented.
 # The array sorting method comes down to the .sort method.
@@ -119,19 +112,27 @@ puts my_hash_sorting_method(hash)
 # 2 cell arrays ([key, value]). Thus when I specify a[1] in my method,
 # a is each one of these arrays and thus a[1] would specify the value element.
 
-# # Person 4
-# def my_array_deletion_method!(source, thing_to_delete)
-#   source.dup # This line is here to make sure all tests initially fail. Delete it when you begin coding.
-# end
+# Person 4
+def my_array_deletion_method!(source, thing_to_delete)
+  source.delete_if do |item| 
+    item.to_s.include? thing_to_delete
+  end
+  source
+end
 
-# def my_hash_deletion_method!(source, thing_to_delete)
-#   source.dup # This line is here to make sure all tests initially fail. Delete it when you begin coding.
-# end
+def my_hash_deletion_method!(source, thing_to_delete)
+  source.delete(thing_to_delete)
+  source
+end
 
-# # Identify and describe the Ruby method(s) you implemented.
-# #
-# #
-# #
+
+
+# Identify and describe the Ruby method(s) you implemented.
+# I used the method delete, which removes an item (but doesn't return the modified hash or array, so you have to do that)
+# Also used the method delete_if which gives delete a conditional
+# And lastly used the method include? which double checks if the object has the secondary object located inside of it (in this case a string)
+# Also used the to_s method to make sure I didn't get a fixnum error when iterating through the loop.
+
 
 
 # # Person 5
