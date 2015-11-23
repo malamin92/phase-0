@@ -32,18 +32,18 @@ def pad!(array, min_size, value = nil) #destructive
   return array
 end
 
-def pad(array, min_size, value = nil) #non-destructive
-  # Your code here
-  new_array = array.dup
-  if array.size == min_size
-  	return new_array
-  else
-    while min_size > new_array.size
-      new_array << value
-    end
-  end
-  return new_array
-end
+# def pad(array, min_size, value = nil) #non-destructive
+#   # Your code here
+#   new_array = array.dup
+#   if array.size == min_size
+#   	return new_array
+#   else
+#     while min_size > new_array.size
+#       new_array << value
+#     end
+#   end
+#   return new_array
+# end
 
 
 # 3. Refactored Solution
