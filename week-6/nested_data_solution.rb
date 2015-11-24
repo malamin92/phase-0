@@ -121,6 +121,6 @@ What was it and why did you decide that was a good option?
 	For the most part, we used methods that I already knew. The only new method that I tried was the #is_a? method which
 	takes a class as an argument and returns true if the object it's called on belongs to that class. This is a similar
 	method to the #kind_of? method. Other than that, we mostly just relied on the #collect! enumerable to iterate over
-	and return values we needed destructively. 
+	and return values we needed destructively. We also used recursion which was new but very useful for this assignment.
 	
 =end
