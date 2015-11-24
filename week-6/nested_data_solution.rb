@@ -40,36 +40,63 @@ p nested_data[:array][1][:hash]
 
 number_array = [5, [10, 15], [20,25,30], 35]
 
-number_array.collect! do |element| 
-	if element.kind_of?(Array)
-		element.collect! {|inner| inner += 5}
-	else
-		element += 5
-	end
-end
-p number_array
+# number_array.collect! do |element| 
+# 	if element.kind_of?(Array)
+# 		element.collect! {|inner| inner += 5}
+# 	else
+# 		element += 5
+# 	end
+# end
+# p number_array
 
+#This is a refactored version using recursion that could traverse infinite amount of nested arrays. :]
+def add_5(array)
+ array.collect! do |element|
+   if element.is_a?(Array)
+     add_5(element)
+   else
+     element += 5
+   end
+ end
+ return array
+end
+
+p add_5(number_array)
 
 # Bonus:
 
 startup_names = ["bit", ["find", "fast", ["optimize", "scope"]]]
 
-startup_names.collect! do |element|
- if element.is_a?(Array)
-   element.collect! do |element|
-     if element.is_a?(Array)
-       element.collect! do |element|
-         element += "ly"
-       end
-     else
-       element += "ly"
-     end
-   end
- else
-   element += "ly"
- end
+# startup_names.collect! do |element|
+#  if element.is_a?(Array)
+#    element.collect! do |element|
+#      if element.is_a?(Array) #this is a new method we found which checks the class of an object.
+#        element.collect! do |element|
+#          element += "ly"
+#        end
+#      else
+#        element += "ly"
+#      end
+#    end
+#  else
+#    element += "ly"
+#  end
+# end
+# p startup_names
+
+# This is a refactored version of the bonus using recursion. 
+def add_ly(array)
+	array.collect! do |element|
+		if element.is_a?(Array)
+			add_ly(element)
+		else
+			element += "ly"
+		end
+	end
+	return array
 end
-p startup_names
+
+p add_ly(startup_names)
 
 =begin
 What are some general rules you can apply to nested arrays?
