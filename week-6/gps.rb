@@ -67,3 +67,29 @@ serving_size_calc("cake", 7)
 serving_size_calc("cookie", 1)
 serving_size_calc("cookie", 10)
 serving_size_calc("THIS IS AN ERROR", 5)
+
+
+=begin 
+What did you learn about making code readable by working on this challenge?
+
+  In this challenge that legacy code can be extremely confusing at first. There were a lot of unnecessary variables thrown in there.
+  The code also did not flow well. When looking at the code initally it was so confusing to figure out what is going on. Ultimately,
+  we were able to get the idea of what's going on in the code. The driver code really helped in doing that.
+
+Did you learn any new methods? What did you learn about them?
+
+  We did not learn any new methods when doing this challenge. All the methods we used were pretty simple and things we've used
+  before doing this challenge.
+
+What did you learn about accessing data in hashes? 
+
+  When it comes to accessing data in a hash, you should just used the key instead of what was done originallly in this code. Initially,
+  the coder used a method to retrieve an array of the values and the refered to that array to get the actual value which made it
+  very confusing and it was unnecessary.
+
+What concepts were solidified when working through this challenge?
+
+  In this challenge, I learned to read code caarefully to try to understand what someone else is doing. I also learned that
+  driver code can really help when doing that. 
+
+=end
