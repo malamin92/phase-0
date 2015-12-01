@@ -6,9 +6,15 @@
 
 # Pseudocode
 
-# Input:
-# Output:
-# Steps:
+# Input: Name as a string.
+# Output: Gretting as a string.
+# Steps: 
+=begin 
+	1. Initialize a class wtih a name.
+	2. Set the name as an instance variable.
+	3. Initialize second class and create an object of the previous class initialized with a name.
+	4. create hello function that puts a greeting with the name from the other class.
+=end
 
 class NameData
 	attr_reader :name
