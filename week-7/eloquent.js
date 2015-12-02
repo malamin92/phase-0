@@ -35,6 +35,13 @@ for(i = 0; i < 7; i++){
 // Functions
 // Complete the `minimum` exercise.
 
+function min(num1, num2){
+	var answer = num1 < num2 ? num1 : num2;
+	return answer
+}
+
+console.log(min(50,2));
+console.log(min(2,8));
 	
 
 // Data Structures: Objects and Arrays
@@ -128,16 +135,29 @@ Complete at least one of the exercises (Looping a Triangle, FizzBuzz, of Chess B
 
 What are the differences between local and global variables in JavaScript?
 	
-	
+	Local variables are only available in the scop in which they were declared. In other words if 
+	you declare a variable inside a function, you can only use that variable in that function. A 
+	variable in the global scop can be used from anywhere in the global scope. That means you
+	can use a global variable inside a functions scope, but you cannot use a local variable
+	in the global scop or a program.
 
 When should you use functions?
 
-	
+	You should use functions when you need to store part of your program away. You can refer to 
+	part of your program at any time. This makes for much easier and more organized code to read
+	and write. This allows you to break down your program into different parts and have them
+	be called at different points of your program.
 
 What is a function declaration?
 
-	
+	A function declaration is made using the function keyword. A function can be declared
+	at any point of a program. This can be bad and good because one can easily get carried away
+	and confuse what their program is doing if they are not careful in the way they are
+	using their functions. You can make call to a function before the function is written 
+	because functions are not treated in the usual top to bottom way. 
 
 Complete the minimum exercise in the eloquent.js file.
+
+	^Look up.
 
 */
