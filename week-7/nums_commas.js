@@ -1,7 +1,7 @@
 // Separate Numbers with Commas in JavaScript **Pairing Challenge**
 
 
-// I worked on this challenge with: .
+// I worked on this challenge with: Mira.
 /*
 Pseudocode
 Pseudocode
@@ -13,7 +13,7 @@ output: string of number separated by commas every 3 spaces
 2. split string backwards into array
 3. make an empty string variable
 4. iterate through array, IF index % 3 == 0, insert comma into string variable (from step 4), ELSE insert element
-5. Remove initial , before index 0
+5. Remove comma at the end of the string
 */
 
 // Initial Solution
