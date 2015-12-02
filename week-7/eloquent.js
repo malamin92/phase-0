@@ -22,6 +22,7 @@ for(i = 0; i < 7; i++){
 	console.log(hashes)
 	hashes += "#"
 }
+
 //output:
 // #
 // ##
@@ -40,12 +41,22 @@ function min(num1, num2){
 	return answer
 }
 
-console.log(min(50,2));
-console.log(min(2,8));
+// console.log(min(50,2)); -> 2
+// console.log(min(2,8)); -> 2
 	
 
 // Data Structures: Objects and Arrays
 // Create an object called "me" that stores your name, age, 3 favorite foods, and a quirk below.
+
+var my_object = {
+	name: "Mohammad Amin",
+	age: "23",
+	fav_foods: ["pizza", "chicken", "cake"],
+	quirk: "I often stay up into the late hours of the night."
+}
+
+// console.log(my_object);
+
 
 /*
 Questions:
@@ -159,5 +170,22 @@ What is a function declaration?
 Complete the minimum exercise in the eloquent.js file.
 
 	^Look up.
+
+Data Structures:
+What is the difference between using a dot and a bracket to look up a property? Ex. array.max vs array["max"]
+
+	When using a . the property must already exists and is a valid variable name. When using the [] 
+	brackets, the expression inside the brackets in evaluated to get the property name. The book
+	describes it best "Whereas value.x fetches the property of value named “x”, value[x] tries to 
+	evaluate the expression x and uses the result as the property name."
+
+Create an object called me that stores your name, age, three favorite foods, and a quirk in your eloquent.js file.
+
+	^Look up.
+
+What is a JavaScript object with a name and value property similar to in Ruby?
+
+	JavaScript objects with name and value properties work in similar ways to hashes in Ruby, though 
+	they are slightly different, they seem to serve the same purpose.
 
 */
