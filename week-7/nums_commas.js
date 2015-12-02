@@ -58,6 +58,31 @@ console.log(separateComma(123423442342));
 // Reflection
 
 /*
+What was it like to approach the problem from the perspective of JavaScript? Did you approach the problem differently?
 
+	Yes, I approached it differently than in Ruby. Javascript isn't as exressive as Ruby is
+	so I had to consider how the logic will be more manual than Ruby is. Even though the 
+	approach was different, JS and Ruby still have a lot in common, so it wasn't completely 
+	out left field.
+
+What did you learn about iterating over arrays in JavaScript?
+
+	Well, there is no .each or enumerable methods in JS, so it is a bit different. Instead
+	we used the while and for loops in order to solve problems. Iterating over arrays in JS
+	is a lot more manual and less "magic" than in Ruby. I think in a way it's better because
+	it's a lot more visual in JS than in Ruby because the magic is ommited.
+
+What was different about solving this problem in JavaScript?
+
+	In a lot of the ways, it was the same. The way it was different was the fact that you
+	had to itterate through elements manually. Other than that, solving the problem requires
+	programming logic similar to that of Ruby. When refactoring, we didn't really get to
+	shorten methods by using "magic" methods like we were able to in Ruby.
+
+What built-in methods did you find to incorporate in your refactored solution?
+
+	We used the unshift method, reverse, join and slice. These methods also exist in Ruby
+	which was nice to see. For the most part it seems that JS has all the basic methods
+	that Ruby comes in from the getgo. 
 */
 
