@@ -4,23 +4,40 @@
 
 // Program Structure
 // Write your own variable and do something to it.
+	
+	var lucky_number = 25, second_lucky_number = 7;
+	var super_lucky_number = lucky_number + second_lucky_number;
+	console.log(super_lucky_number);
 
-
-
+// Program that prompts for food and responds.
+	// prompt("What's your favorite food?")
+	// ->"pizza"
+	// alert("Hey! That's my favorite too!")
 
 // Complete one of the exercises: Looping a Triangle, FizzBuzz, or Chess Board
+//Looping a Triangle:
 
+var hashes = "#"
+for(i = 0; i < 7; i++){
+	console.log(hashes)
+	hashes += "#"
+}
+//output:
+// #
+// ##
+// ###
+// ####
+// #####
+// ######
+// #######
 
 
 // Functions
-
-
 // Complete the `minimum` exercise.
 
-
+	
 
 // Data Structures: Objects and Arrays
-
 // Create an object called "me" that stores your name, age, 3 favorite foods, and a quirk below.
 
 /*
@@ -66,15 +83,61 @@ What is the purpose of semicolons in JavaScript? Are they always required?
 
 What causes a variable to return undefined?
 
-	
+	You get an undefined return if you return a variable that does not have an assigned value, an empty variable.
 
 Write your own variable and do something to it in the eloquent.js file.
+
+	^Look up.
+
 What does console.log do and when would you use it? What Ruby method(s) is this similar to?
-Write a short program that asks for a user to input their favorite food. After they hit return, have the program respond with "Hey! That's my favorite too!" (You will probably need to run this in the Chrome console (Links to an external site.) rather than node since node does not support prompt or alert). Paste your program into the eloquent.js file.
+
+	The console.log in JavaScript is used to output something to the screen in a console or command line. It
+	is pretty much the equivalent of puts or print in Ruby. They of course work in different ways but the
+	idea of outputting is that same in both languages. 
+
+Write a short program that asks for a user to input their favorite food. 
+After they hit return, have the program respond with "Hey! That's my favorite too!" 
+(You will probably need to run this in the Chrome console (Links to an external site.) 
+rather than node since node does not support prompt or alert). 
+Paste your program into the eloquent.js file.
+
+	^Look up.	
+
 Describe while and for loops
+
+	A while loop is a loop that runs until the condition is met. When writing a while loop, something
+	must change in order to tell the loop to stop or it will run forever. The code that is inside
+	the loop will run over and over again until the stop condition is met also. A for loop is similar
+	to the while loop, they can be used interchangeably in most cases. A for loop has three parts,
+	a starting point, an ending point and something that increments or decrements. Until the stopping
+	condition is met, the code inside the for loop will keep running. The key word break can be used 
+	in the loop if it needs to be stopped.
+
 What other similarities or differences between Ruby and JavaScript did you notice in this section?
+
+	There are a lot of similarities and differences between Ruby and JS. I think in terms of syntax,
+	a lot of it is the same. It seems like Ruby has more built in methods that JS does. JS also seems
+	to be more error prone as it does automatic type conversion. You can't get input in JS from the 
+	console, which you can in Ruby. The for loop is different in Ruby than in Java. The while loop
+	is the same in both. 
+
 Complete at least one of the exercises (Looping a Triangle, FizzBuzz, of Chess Board) in the eloquent.js file.
 
 
+	^Look up.
+
+What are the differences between local and global variables in JavaScript?
+	
+	
+
+When should you use functions?
+
+	
+
+What is a function declaration?
+
+	
+
+Complete the minimum exercise in the eloquent.js file.
 
 */
