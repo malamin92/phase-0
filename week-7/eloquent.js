@@ -37,10 +37,43 @@ Are there any concepts you feel uncomfortable with?
 
 	There are no cocepts that I feel uncomfortable with.
 
+Values, Types and Operators:
 Identify two similarities and two differences between JavaScript and Ruby syntax with regard to 
 numbers, arithmetic, strings, booleans, and various operators.
 
+	In JavaScript you can write an exponenet using something like 2.98e8 which is equivalent to 299,800,000,
+	this feature is not available in Ruby. Javascript has something called NaN which stands for not a number,
+	this is something you get when you try doing a math operation like infinity - infinity, which are JS
+	fatures, or 0/0, which in Ruby would lead to an error. JS also has a typeof operator which takes one value
+	and returns its type like string or number, Ruby does not. Just like in Ruby however, you can write a string
+	statement using "", and seperate lines by using "\n", you can also concatinate strings in JS just like
+	in Ruby using the + operator. Comparitors in Js are the same as they are in Ruby like the > or < comparitors,
+	they function in the same way in both languages. JavaScript also has a ternary operator just like Ruby does.
+	Something I took note of is that JavaScript has the automatic type conversion which Ruby doesn't, this seems
+	to be something I need to be careful about when writing JavaScript.
+
+Program Structure:
+What is an expression?
 	
+	An expression is a fragment of code that produces some kind of value. This means almost everything is an 
+	expression. For example, 1; is an expression becuase it produces the value 1. 
+
+What is the purpose of semicolons in JavaScript? Are they always required?
+
+	According to Eloquent JavaScript, there are some cases where the semicolon is not requried. However, it is
+	advised that we always use a semicolon because the cases where it can be omited are pretty rare, so just to
+	be safe we should use s semi-colon to end an expression.
+
+What causes a variable to return undefined?
+
+	
+
+Write your own variable and do something to it in the eloquent.js file.
+What does console.log do and when would you use it? What Ruby method(s) is this similar to?
+Write a short program that asks for a user to input their favorite food. After they hit return, have the program respond with "Hey! That's my favorite too!" (You will probably need to run this in the Chrome console (Links to an external site.) rather than node since node does not support prompt or alert). Paste your program into the eloquent.js file.
+Describe while and for loops
+What other similarities or differences between Ruby and JavaScript did you notice in this section?
+Complete at least one of the exercises (Looping a Triangle, FizzBuzz, of Chess Board) in the eloquent.js file.
 
 
 
