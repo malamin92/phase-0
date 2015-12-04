@@ -71,13 +71,13 @@ IF snapes anger reaches 10, the game is over and Gryffindor gets points taken of
 
 // Refactored Code
 
-var harry = {
+var harry = { //book object
 	success: false,
-	guess_answer: function(harrys_guess) {
+	guess_answer: function(harrys_guess) { //changed to more relavant variable name here.
 		if (harrys_guess < book.answer_page){
-			snape.anger += 1;
+			snape.anger += 1; //changing the property in snape
 			if (snape.anger >= 7){
-				snape.throws_fit();
+				snape.throws_fit(); //call to function in snape object
 			}
 			else{
 			console.log("Hermione whispers: 'Try higher Harry!");
@@ -100,11 +100,11 @@ var harry = {
 	}
 };
 
-var book = {
+var book = { // book object
 	answer_page: Math.floor((Math.random()*100)+1)
 };
 
-var snape = {
+var snape = { // snape object
 	anger: 0,
 	throws_fit: function() {
 		console.log("Snape: That's it! 100 points from Gryffindor! And detention for you  POTTTER!")
@@ -113,7 +113,7 @@ var snape = {
 
 
 //driver code
-harry.guess_answer(45);
+harry.guess_answer(45); //call to function in harry object
 harry.guess_answer(54);
 harry.guess_answer(44);
 harry.guess_answer(60);
