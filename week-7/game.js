@@ -28,16 +28,16 @@ IF snapes anger reaches 10, the game is over and Gryffindor gets points taken of
 
 // var harry = {
 // 	success: false,
-// 	guess_answer: function(page_number) {
+// 	guess_answer: function(harrys_guess) {
 // 		console.log(book.answer_page)
-// 		if (page_number < book.answer_page){
+// 		if (harrys_guess < book.answer_page){
 // 			console.log("Hermione whispers: 'Try higher Harry!");
 // 			snape.gets_angrier;
 // 			if (snape.anger > 9){
 // 				snape.throws_fit;
 // 			}
 // 		}
-// 		else if (page_number > book.answer_page){
+// 		else if (harrys_guess > book.answer_page){
 // 			console.log("Hermione whispers: 'Try lower Harry!");
 // 			snape.gets_angrier;
 // 			if (snape.anger > 9){
@@ -73,19 +73,18 @@ IF snapes anger reaches 10, the game is over and Gryffindor gets points taken of
 
 var harry = {
 	success: false,
-	guess_answer: function(page_number) {
-		console.log(book.answer_page)
-		if (page_number < book.answer_page){
+	guess_answer: function(harrys_guess) {
+		if (harrys_guess < book.answer_page){
 			console.log("Hermione whispers: 'Try higher Harry!");
 			snape.gets_angrier;
-			if (snape.anger > 9){
+			if (snape.anger > 7){
 				snape.throws_fit;
 			}
 		}
-		else if (page_number > book.answer_page){
+		else if (harrys_guess > book.answer_page){
 			console.log("Hermione whispers: 'Try lower Harry!");
 			snape.gets_angrier;
-			if (snape.anger > 9){
+			if (snape.anger > 7){
 				snape.throws_fit;
 			}
 		}
@@ -102,7 +101,6 @@ var book = {
 };
 
 
-
 var snape = {
 	anger: 0,
 	gets_angrier: function() {
@@ -114,15 +112,41 @@ var snape = {
 };
 
 
-
-
+//driver code
+harry.guess_answer(45);
+harry.guess_answer(50);
 
 // Reflection
-//
-//
-//
-//
-//
-//
-//
-//
+/*
+What was the most difficult part of this challenge?
+
+	The most difficult part of this challenge was to think how the objects were going
+	to interact with each other. I had to really think about the properties each object
+	will hold and at what point they will be altered. Thinking in that way was the most
+	difficult along with an idea of coming up with an original game.
+
+What did you learn about creating objects and functions that interact with one another?
+
+	Objects are idependant and hold their own properties. When you want to interact with
+	with another object, you have to do it from the object you are currently in or outside
+	of the object. In a way, the objects are using each other to change depending on certain
+	conditions. Interacting with another object is as easy as naming that object and changing
+	its property from within the object you are currently in.
+
+Did you learn about any new built-in methods you could use in your refactored solution? 
+If so, what were they and how do they work?
+
+	I learned about the random() function which generate a random number within a certain
+	range. I also learned about how it is extremely inconvnient to get input in JavaScript.
+	You have to use an external library and even at that point it doesn't really work
+	the way I'm used to in other laguages that I've tried.
+
+How can you access and manipulate properties of objects?
+
+	You can access and manipulate objects properties using the . operator. This along with
+	the name of the propety you are trying to change helps you refer to the specfic thing
+	you are trying to change. This is the same when it comes to propety functions, you can
+	just call the function by using the . operator and the name of the function property
+	you are trying to call.
+
+*/
