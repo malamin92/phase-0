@@ -75,17 +75,21 @@ var harry = {
 	success: false,
 	guess_answer: function(harrys_guess) {
 		if (harrys_guess < book.answer_page){
+			snape.anger += 1;
+			if (snape.anger >= 7){
+				snape.throws_fit();
+			}
+			else{
 			console.log("Hermione whispers: 'Try higher Harry!");
-			snape.gets_angrier;
-			if (snape.anger > 7){
-				snape.throws_fit;
 			}
 		}
 		else if (harrys_guess > book.answer_page){
+			snape.anger += 1;
+			if (snape.anger >= 7){
+				snape.throws_fit();
+			}
+			else{
 			console.log("Hermione whispers: 'Try lower Harry!");
-			snape.gets_angrier;
-			if (snape.anger > 7){
-				snape.throws_fit;
 			}
 		}
 		else{
@@ -100,12 +104,8 @@ var book = {
 	answer_page: Math.floor((Math.random()*100)+1)
 };
 
-
 var snape = {
 	anger: 0,
-	gets_angrier: function() {
-		this.anger += 1;
-	},
 	throws_fit: function() {
 		console.log("Snape: That's it! 100 points from Gryffindor! And detention for you  POTTTER!")
 	}
@@ -114,7 +114,14 @@ var snape = {
 
 //driver code
 harry.guess_answer(45);
-harry.guess_answer(50);
+harry.guess_answer(54);
+harry.guess_answer(44);
+harry.guess_answer(60);
+harry.guess_answer(85);
+harry.guess_answer(10);
+harry.guess_answer(25);
+
+
 
 // Reflection
 /*
