@@ -119,7 +119,7 @@ harry.guess_answer(44);
 harry.guess_answer(60);
 harry.guess_answer(85);
 harry.guess_answer(10);
-harry.guess_answer(25);
+harry.guess_answer(25); // invoked the throws fit function if not correct by now.
 
 
 
