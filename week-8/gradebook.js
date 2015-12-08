@@ -83,7 +83,7 @@ function average(array){
 	return total/array.length;
 }
 
-console.log(gradebook.getAverage("Joseph"));
+//console.log(gradebook.getAverage("Joseph"));
 
 
 
