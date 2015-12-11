@@ -32,7 +32,7 @@
 
 #### RELEASE 6
 
-![Cher's Schema](database-intro/chers_schema.png)
+![Cher's Schema](https://github.com/malamin92/phase-0/blob/master/week-8/database-intro/chers_schema.png)
 
 #### RELEASE 7 - REFLECTION
 
