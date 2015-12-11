@@ -1,8 +1,8 @@
 #### RELEASE 2
-![RELEASE 2]()
+![RELEASE 2](https://github.com/malamin92/phase-0/blob/master/week-8/passports_schema.png)
 
 #### RELEASE 4
-![RELEASE 4]()
+![RELEASE 4](https://github.com/malamin92/phase-0/blob/master/week-8/grocery.png)
 
 #### RELEASE 6 - REFLECTION
 #####What is a one-to-one database?
