@@ -23,7 +23,8 @@ pseudocode:
 5. print list
 	input: nada
 	output: printed list of items and quantity
-	 
+	1. iterate through each item in the items object
+	2. print out each item and quantity to the console on a new line 
 */
 function List(){
 	this.items = {};
@@ -33,10 +34,6 @@ List.prototype.addItem = function(item_name, quantity){
 	this.items[item_name] = quantity; 
 }
 
-List.prototype.printList = function(){
-	console.log(this.items);
-}
-
 List.prototype.removeItem = function(item_name){
 	delete this.items[item_name];
 }
@@ -44,6 +41,18 @@ List.prototype.removeItem = function(item_name){
 List.prototype.updateItem = function(item_name, quantity){
 	this.items[item_name] = quantity;
 }
+
+// List.prototype.printList = function(){
+// 	console.log(this.items);
+// }
+
+//recatored print list, looks much neater and skips lines
+List.prototype.printList = function(){
+	for(var item in this.items){
+		console.log(item + ": " + this.items[item]);
+	}
+}
+
 //driver code
 my_list = new List;
 my_list.addItem("celery", 1);
