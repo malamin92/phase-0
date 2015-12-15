@@ -59,3 +59,26 @@ $('div img').mouseenter(function () {
 
 
 })  // end of the document.ready function: do not remove or write DOM manipulation below this.
+
+/*
+What is jQuery?
+
+JQuery is a JS API that allows you to dynamically alter elements on your HTML
+page. It is cool because the changes that take place do not require your page
+to reload. The effects are dynamic and allows you to add a nice touch to your 
+pages making them more interesting than just plain old HTML and CSS.
+
+What does jQuery do for you?
+
+JQuery allows you to make dynamic changes to the elements on the DOM. It allows
+for changes to the HTML and CSS on you page without reloading the page. This 
+allows your to add interestng affects like animations and loops to your
+HTML and CSS.
+
+What did you learn about the DOM while working on this challenge?
+
+The DOM elements can be selected and targeted for change via the Jquery API.
+These elements are normally static but JQuery allows the browser to make them
+more dynamic and robust.
+
+*/
