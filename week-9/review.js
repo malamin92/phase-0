@@ -63,3 +63,27 @@ my_list.removeItem("celery");
 my_list.printList();
 my_list.updateItem("brocoli", 2);
 my_list.printList();
+
+/*
+What concepts did you solidify in working on this challenge? (reviewing the passing of information, objects, constructors, etc.)
+
+	In this challenge, I reviewd the concepts of cunstructors and prototypes in javascript. Using the constructor
+	you essentially create objects that are similar to classes in Ruby. Then, when you use a prototype function, you
+	save memory because the prototype function will only load once into memory per call. If you create a function inside
+	and object, each time a new function object is created, you create a new instance of the function as well, making
+	them less efficient.
+
+What was the most difficult part of this challenge?
+	
+	The most difficult part was using the this key word. I've learned that this is almost the same as @ in Ruby.
+	Essenetially the this key word in JS will do the same thing, it will keep the instance of that property
+	individual to each object that's created with that constructor object. When iterating over the object, using
+	the this key word will allow you to access each property of the object.
+
+Did an array or object make more sense to use and why?
+
+	In this case, I use an object. This is so that I can keep track of the name of the item as well as the
+	quantity, which makes sense to put into key and value pairs. This makes it easy to find the quantity 
+	of an item as it is asscoiated with the item name in pairs. 
+
+*/
