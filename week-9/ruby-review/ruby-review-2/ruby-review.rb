@@ -145,9 +145,11 @@ that allows a coder to write DRY code by allowing you to have access to methods 
 class that you "inherit" from. Using the super key word, you can then assign variables you've created in order
 to cut down repeating code but having functionality avialable in another class.
 
+In my solo challenge, I reviewd reverse and collect of ruby methods as well as enumerables in general.
+
 What is still confusing to you about Ruby?
 
-I thin I'm still a little confused about how Ruby handles class interactions. It seems a bit messy because
+I think I'm still a little confused about how Ruby handles class interactions. It seems a bit messy because
 you are creating objects of different classes and passing them to each other. 
 
 What are you going to study to get more prepared for Phase 1?
