@@ -24,7 +24,7 @@
 
 # Refactored Solution
 def reverse_words(sentence)
-	sentence.split(" ").collect{|word| wrod.reverse}.join(" ")
+	sentence.split(" ").collect{|word| word.reverse}.join(" ")
 end
 
 
