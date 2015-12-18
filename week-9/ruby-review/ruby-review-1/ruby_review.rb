@@ -16,14 +16,16 @@
 
 
 # Initial Solution
-def reverse_words(sentence)
-	words_array = sentence.split(" ")
-	reversed_words = words_array.collect{|word| word.reverse}
-	reversed_words.join(" ")
-end
+# def reverse_words(sentence)
+# 	words_array = sentence.split(" ")
+# 	reversed_words = words_array.collect{|word| word.reverse}
+# 	reversed_words.join(" ")
+# end
 
 # Refactored Solution
-
+def reverse_words(sentence)
+	sentence.split(" ").collect{|word| wrod.reverse}.join(" ")
+end
 
 
 
