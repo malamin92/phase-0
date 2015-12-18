@@ -102,7 +102,7 @@ class GlobalCohort
          return 1
        elsif Date.today >= immersive_start_date + 21 && Date.today < immersive_start_date + 42
          return 2
-       elsif Date.today >= immersive_start_date + 42 && Date.today < immersive_start_date + 63
+       elsif 
          return 3
        end
   end
