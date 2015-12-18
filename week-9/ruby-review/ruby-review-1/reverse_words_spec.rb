@@ -1,4 +1,5 @@
 require_relative "ruby_review"
+require "rspec"
 
 def random_word(length = 5)
   rand(36**length).to_s(36)
