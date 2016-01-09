@@ -32,36 +32,36 @@ function List(){
 
 List.prototype.addItem = function(item_name, quantity){
 	this.items[item_name] = quantity; 
-}
+};
 
 List.prototype.removeItem = function(item_name){
 	delete this.items[item_name];
-}
+};
 
 List.prototype.updateItem = function(item_name, quantity){
 	this.items[item_name] = quantity;
-}
+};
 
 // List.prototype.printList = function(){
 // 	console.log(this.items);
 // }
 
-//recatored print list, looks much neater and skips lines
+//refactored print list, looks much neater and skips lines
 List.prototype.printList = function(){
 	for(var item in this.items){
 		console.log(item + ": " + this.items[item]);
 	}
-}
+};
 
 //driver code
 my_list = new List;
 my_list.addItem("celery", 1);
-my_list.addItem("brocoli", 5);
+my_list.addItem("broccoli", 5);
 my_list.addItem("coliflower", 8);
-my_list.printList();//{ celery: 1, brocoli: 5, coliflower: 8  }
+my_list.printList();//{ celery: 1, broccoli: 5, cauliflower: 8  }
 my_list.removeItem("celery");
 my_list.printList();
-my_list.updateItem("brocoli", 2);
+my_list.updateItem("broccoli", 2);
 my_list.printList();
 
 /*
